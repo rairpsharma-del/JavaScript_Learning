@@ -14,12 +14,12 @@ const JSuser = {
 }
 
 // Ways to access data stored in object.
-console.log(JSuser.name);
-console.log(JSuser["email"]);
+// console.log(JSuser.name);
+// console.log(JSuser["email"]);
 // Only way of accessing the data of object is the key is declared as String.
-console.log(JSuser["isLoggedIn"]);
+// console.log(JSuser["isLoggedIn"]);
 // Only of accessing the data of the object if the data type of key is Symbol.
-console.log(JSuser["mysym"]);
+// console.log(JSuser["mysym"]);
 
 // Overwrite the data of the object.
 JSuser.email = "RaghavSharma@gmail.com";
@@ -32,4 +32,25 @@ JSuser.greeting = function(){
     console.log("Hello Js User");
 }
 // returns the refrence of the fucntion.
-console.log(JSuser.greeting);
+// console.log(JSuser.greeting);
+
+// will call the function.
+// console.log(JSuser.greeting());
+
+// Object De-structuring
+
+const courseObject = {
+    courseName:"javascript",
+    price:"999",
+    courseInstructor:"Raghav",
+}
+
+const {courseInstructor:instructor} = courseObject;
+console.log(instructor);
+
+/*
+    API:- Set of rules and protocols which allows the application to share data and communicate with each other.
+    It act as middleman, it takes your request and send it to server and then returns a response mostly in json format.
+*/
+
+
